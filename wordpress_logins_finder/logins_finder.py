@@ -14,7 +14,7 @@ from typing import NamedTuple, List, Union, Dict
 
 from utils.constants import Config, targets_to_check, Types
 from utils.logger_formater import OneLineExceptionFormatter
-from wordpress_logins_finder.utils.request_manager import probe_target_schema, RequestManager
+from utils.request_manager import probe_target_schema, RequestManager
 
 
 class RunConfig(NamedTuple):
