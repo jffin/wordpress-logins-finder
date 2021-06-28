@@ -21,7 +21,7 @@ def targets_to_check(target: str) -> List[str]:
         f'{target}/section/news?rest_route=/wp/v2/users',
         f'{target}/section/news?rest_route=/wp/v2/usErs',
     ]
-    target_urls.extend([f'/wp-json/wp/v2/users/{i}' for i in range(1, 1000)])
+    target_urls.extend([f'{target}/wp-json/wp/v2/users/{i}' for i in range(1, 1000)])
     target_urls.append(f'{target}/wp-json/wp/v2/users?search=admin@{strip_scheme(target)}')
     return target_urls
 
